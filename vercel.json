@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/login", "destination": "/login.html", "permanent": true },
+    { "source": "/signup", "destination": "/signup.html", "permanent": true }
+  ]
+}
