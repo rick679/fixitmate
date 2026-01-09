@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixitMate - Home Services Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">Fixit<span class="text-white">Mate</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#experts">For Experts</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Auth Links -->
+      <div id="auth-actions" style="display:flex; gap:10px; margin-left:15px;">
+        <a href="/login.html" class="btn btn-outline" style="padding: 8px 16px;">Log In</a>
+        <a href="/signup.html" class="btn btn-primary" style="padding: 8px 16px;">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal fade-left">
+            <h1>Your Home Problems, <br><span class="text-white">Solved Instantly.</span></h1>
+            <p>Don't let a leaky sink or broken light ruin your day. Connect with trusted local experts or get instant
+              DIY guides.</p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">Find a Pro</a>
+              <a href="#diy" class="btn btn-outline">I'll Fix it Myself</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal fade-right delay-200">
+            <img src="/images/hero_image.jpg" alt="Home Repair Professional" class="hero-img floating-anim">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-bottom">
+          <h2>Everything you need fixed</h2>
+          <p>From plumbing disasters to furniture assembly, we've got you covered.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal fade-bottom delay-100">
+            <div class="icon-box">
+              <img src="/images/icon_plumbing.png" alt="Plumbing" class="service-icon">
+            </div>
+            <h3>Plumbing</h3>
+            <p>Leaky Taps, clogged drains, and pipe issues resolved quickly.</p>
+          </div>
+          <div class="service-card reveal fade-bottom delay-200">
+            <div class="icon-box">
+              <img src="/images/icon_electrical.png" alt="Electrical" class="service-icon">
+            </div>
+            <h3>Electrical</h3>
+            <p>Lighting installations, switches, and wiring safety checks.</p>
+          </div>
+          <div class="service-card reveal fade-bottom delay-300">
+            <div class="icon-box">
+              <img src="/images/icon_assembly.png" alt="Assembly" class="service-icon">
+            </div>
+            <h3>Assembly & Repair</h3>
+            <p>Furniture assembly, dry-wall repair, and general handyman tasks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section-padding" style="background: rgba(255,255,255,0.02);">
+      <div class="container">
+        <div class="section-header reveal fade-bottom">
+          <h2>How FixitMate Works</h2>
+          <p>Get your problem solved in 3 simple steps.</p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step reveal zoom-in delay-100">
+            <div class="step-number">1</div>
+            <h3>Describe the Issue</h3>
+            <p style="color:var(--text-muted); margin-top:10px;">Tell us what's broken or upload a photo of the problem.
+            </p>
+          </div>
+          <div class="step reveal zoom-in delay-200">
+            <div class="step-number">2</div>
+            <h3>Choose Solution</h3>
+            <p style="color:var(--text-muted); margin-top:10px;">Pick a detailed DIY guide or hire a rated local
+              professional.</p>
+          </div>
+          <div class="step reveal zoom-in delay-300">
+            <div class="step-number">3</div>
+            <h3>Get it Fixed</h3>
+            <p style="color:var(--text-muted); margin-top:10px;">Follow the guide or wait for the pro to arrive. Done!
+            </p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-bottom">
+          <h2>Common Questions</h2>
+          <p>Everything you need to know about FixitMate.</p>
+        </div>
+
+        <div class="faq-grid reveal fade-bottom delay-100">
+          <details class="faq-item">
+            <summary>How fast can I get help?</summary>
+            <p class="faq-answer">Most users get matched with a pro within 15 minutes. For DIY guides, they are
+              available instantly!</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is there a booking fee?</summary>
+            <p class="faq-answer">No, FixitMate is free to use for homeowners. You only pay the professional for their
+              work.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are the experts vetted?</summary>
+            <p class="faq-answer">Yes, all pros go through a background check and skill assessment before joining our
+              platform.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert Banner -->
+    <section id="experts" class="section-padding" style="padding-bottom: 0;">
+      <div class="container reveal fade-bottom">
+        <div class="expert-banner">
+          <div>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white;">Are you a Pro?</h2>
+            <p style="color: #94a3b8; max-width: 400px; margin-bottom: 2rem;">Join 5,000+ local experts and get matched
+              with customers instantly. No lead fees.</p>
+            <a href="/signup.html?role=expert" class="btn btn-primary">Join as Expert</a>
+          </div>
+          <div style="font-size: 5rem;">🛠️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-bottom">
+          <h2>Trust by Families</h2>
+          <p>See why 10,000+ happy customers use FixitMate.</p>
+        </div>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card reveal fade-bottom delay-100">
+            <p style="margin-bottom: 20px; font-style: italic;">"The plumber arrived in 30 minutes. My kitchen is
+              saved!"</p>
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <img src="/images/avatar_1.jpeg" alt="User"
+                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #334155;">
+              <div>
+                <h4 style="font-size: 1rem;">My baby</h4>
+                <span style="font-size: 0.8rem; color: var(--secondary);">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card reveal fade-bottom delay-200">
+            <p style="margin-bottom: 20px; font-style: italic;">"I used the DIY guide for my light switch. Super clear
+              instructions."</p>
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <img src="/images/avatar_2.jpg" alt="User"
+                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #334155;">
+              <div>
+                <h4 style="font-size: 1rem;">My love</h4>
+                <span style="font-size: 0.8rem; color: var(--secondary);">3 DIY Fixes</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card reveal fade-bottom delay-300">
+            <p style="margin-bottom: 20px; font-style: italic;">"Fair prices and the expert was extremely polite. Highly
+              recommend."</p>
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <img src="/images/avatar_3.jpg" alt="User"
+                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; background: #334155;">
+              <div>
+                <h4 style="font-size: 1rem;">My sweet heart</h4>
+                <span style="font-size: 0.8rem; color: var(--secondary);">Verified Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section-padding">
+      <div class="container reveal fade-bottom">
+        <div
+          style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 4rem; border-radius: 20px; text-align: center;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to fix your home?</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Join thousands of happy homeowners today.</p>
+          <button class="btn" style="background: white; color: var(--primary);">Get Started Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">Fixit<span class="text-white">Mate</span></div>
+          <p>The modern way to solve household problems. Fast, reliable, and easy.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Plumbing</a></li>
+            <li><a href="#">Electrical</a></li>
+            <li><a href="#">Carpentry</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        style="text-align: center; border-top: 1px solid var(--border); padding-top: 2rem; color: var(--text-muted);">
+        &copy; 2024 FixitMate. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - FixitMate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css"> <!-- Reusing main styles -->
+</head>
+
+<body>
+    <!-- Simplified Header -->
+    <header>
+        <div class="container">
+            <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">Fixit<span
+                        class="text-white">Mate</span></a></div>
+            <a href="/" class="btn btn-outline" style="border:none;">&larr; Back to Home</a>
+        </div>
+    </header>
+
+    <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: 80px;">
+        <div class="auth-card auth-anim">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Welcome Back</h2>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div style="text-align: right; margin-bottom: 1.5rem;">
+                    <a href="#" class="text-link">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
+            </form>
+
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-muted);">
+                Don't have an account? <a href="/signup.html" class="text-link">Sign Up</a>
+            </p>
+        </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

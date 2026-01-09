@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - FixitMate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"><a href="/" style="text-decoration:none; color:inherit;">Fixit<span
+                        class="text-white">Mate</span></a></div>
+            <div id="auth-actions" style="display:flex; gap:10px; margin-left:15px;">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px; padding-bottom: 4rem; min-height: 80vh;">
+        <div class="container">
+
+            <!-- Connect Logic handles what is shown here -->
+            <div id="dashboard-content">
+                <!-- Loading State -->
+                <div style="text-align: center; color: var(--text-muted);">Loading Dashboard...</div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Templates for Dynamic Content (Hidden) -->
+    <template id="homeowner-view">
+        <div class="dashboard-header">
+            <h2>My Requests</h2>
+            <button id="new-request-btn" class="btn btn-primary">+ New Request</button>
+        </div>
+
+        <!-- New Request Form (Hidden by default) -->
+        <div id="request-form-container" class="form-card" style="display:none; margin-bottom: 2rem;">
+            <h3>Describe your problem</h3>
+            <form id="create-request-form">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="req-title" placeholder="e.g. Leaky Kitchen Sink" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="req-category"
+                        style="width:100%; padding:12px; border-radius:8px; border:1px solid var(--border); background:var(--bg-body); color:var(--text-main);">
+                        <option value="Plumbing">Plumbing</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Assembly">Assembly & Repair</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="req-desc" rows="4"
+                        style="width:100%; padding:12px; border-radius:8px; border:1px solid var(--border); background:var(--bg-body); color:var(--text-main);"
+                        placeholder="Details..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Post Request</button>
+                <button type="button" id="cancel-request-btn" class="btn btn-outline">Cancel</button>
+            </form>
+        </div>
+
+        <!-- List of Requests -->
+        <div id="my-requests-list" class="requests-grid">
+            <!-- Injected JS -->
+        </div>
+    </template>
+
+    <template id="expert-view">
+        <div class="dashboard-header">
+            <h2>Job Board</h2>
+            <p style="color:var(--text-muted);">Find jobs created by homeowners nearby.</p>
+        </div>
+
+        <div id="job-board-list" class="requests-grid">
+            <!-- Injected JS -->
+        </div>
+    </template>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
